@@ -26,13 +26,15 @@ class Student{
  /// prints the details
  /// does not return anything
  void displayStudDetails(){
+  num total = calculateTotal();
+  num perc = percentage();
   print("""
 The name of the student is $studName,
 With their roll no. being $rollNum
 ---------- Exam Details -----------
-Marks             |Percentage      |
-$calculateTotal() |$percentage()   |
-__________________|________________|
+Marks Percentage 
+$total     $perc      
+
 
 """);
  }
